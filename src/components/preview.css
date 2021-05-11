@@ -8,9 +8,15 @@
   height: 100%;
   width: 100%;
 }
+.preview-error {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  color: red;
+}
 
 .react-draggable-transparent-selection .preview-wrapper:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
