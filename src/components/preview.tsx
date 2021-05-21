@@ -46,7 +46,6 @@ const Preview: React.FC<PreviewProps> = ({ code, bundlingStatusText }) => {
       iframe.current.contentWindow.postMessage(code, "*");
     }, 50);
   }, [code]);
-  console.log(bundlingStatusText);
 
   return (
     <div className="preview-wrapper">
