@@ -25,9 +25,9 @@ const CellList: React.FC = () => {
   ));
 
   return (
-    <div>
+    <div className="cell-list">
+      <AddCell forceVisible={cells.length === 0} previousCellId={null} />
       {renderedCells}
-      {renderedCells.length === 0 && <AddCell previousCellId={null} />}
     </div>
   );
 };
